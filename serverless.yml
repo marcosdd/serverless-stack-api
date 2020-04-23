@@ -12,6 +12,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
+  profile: default
   stage: prod
   region: us-east-1
 
