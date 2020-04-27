@@ -14,6 +14,7 @@ export const main = handler(async (event, context) => {
   };
 
   const result = await dynamoDb.get(params);
+  console.log(result);
   if ( ! result.Item) {
     throw new Error("Item not found.");
   }
